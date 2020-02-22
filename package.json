@@ -1,0 +1,16 @@
+{
+  "name": "neta-scraper",
+  "version": "1.0.0",
+  "description": "A scraper for netamorphosis.com, to convert all it's data to a portable format.",
+  "main": "index.js",
+  "scripts": {
+    "scrape": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "puppeteer": "^2.1.1",
+    "sitemap": "^5.1.0"
+  }
+}
