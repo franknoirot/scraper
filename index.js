@@ -31,7 +31,7 @@ async function run() {
     addFile(``, { filename: 'sitemap', content: sitemapObj}) // will need frontend friendly version to bundle a .zip file
 
     const directoryCallbacks = [ // static site's GUI will let user build this object eventually
-        { path: '/about/team/*', callback: getBio, on: false },
+        { path: '/about/team/*', callback: getBio, on: true },
         { path: '/join-us/*', preCallback: (url, obj) => { obj.callback = url.includes('inquiry') ? getInquiry : getJob }, on: true },
     ]
 

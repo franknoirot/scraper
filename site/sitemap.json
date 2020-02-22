@@ -1,0 +1,308 @@
+{
+  "name": "https://netamorphosis.com/",
+  "children": [
+    {
+      "name": "insights/",
+      "url": "https://netamorphosis.com/insights/",
+      "children": [
+        {
+          "name": "glossary/",
+          "url": "https://netamorphosis.com/insights/glossary/"
+        },
+        {
+          "name": "2018/",
+          "children": [
+            {
+              "name": "05/",
+              "children": [
+                {
+                  "name": "why-organic-seo-matters/",
+                  "url": "https://netamorphosis.com/insights/2018/05/why-organic-seo-matters/"
+                },
+                {
+                  "name": "content-creation-strategy/",
+                  "url": "https://netamorphosis.com/insights/2018/05/content-creation-strategy/"
+                }
+              ]
+            },
+            {
+              "name": "04/",
+              "children": [
+                {
+                  "name": "omnichannel-strategy/",
+                  "url": "https://netamorphosis.com/insights/2018/04/omnichannel-strategy/"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "2017/",
+          "children": [
+            {
+              "name": "04/",
+              "children": [
+                {
+                  "name": "design-essential-part-strategy/",
+                  "url": "https://netamorphosis.com/insights/2017/04/design-essential-part-strategy/"
+                }
+              ]
+            },
+            {
+              "name": "09/",
+              "children": [
+                {
+                  "name": "collaborative-business/",
+                  "url": "https://netamorphosis.com/insights/2017/09/collaborative-business/"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "join-us/",
+      "url": "https://netamorphosis.com/join-us/",
+      "children": [
+        {
+          "name": "inquiry-application/",
+          "url": "https://netamorphosis.com/join-us/inquiry-application/"
+        },
+        {
+          "name": "digital-project-manager/",
+          "url": "https://netamorphosis.com/join-us/digital-project-manager/"
+        },
+        {
+          "name": "seo-strategist/",
+          "url": "https://netamorphosis.com/join-us/seo-strategist/"
+        },
+        {
+          "name": "senior-project-manager/",
+          "url": "https://netamorphosis.com/join-us/senior-project-manager/"
+        },
+        {
+          "name": "design-director/",
+          "url": "https://netamorphosis.com/join-us/design-director/"
+        },
+        {
+          "name": "paid-intern-nyc/",
+          "url": "https://netamorphosis.com/join-us/paid-intern-nyc/"
+        },
+        {
+          "name": "digital-project-coordinator/",
+          "url": "https://netamorphosis.com/join-us/digital-project-coordinator/"
+        },
+        {
+          "name": "senior-content-strategist/",
+          "url": "https://netamorphosis.com/join-us/senior-content-strategist/"
+        },
+        {
+          "name": "operations-project-manager/",
+          "url": "https://netamorphosis.com/join-us/operations-project-manager/"
+        },
+        {
+          "name": "performance-analyst/",
+          "url": "https://netamorphosis.com/join-us/performance-analyst/"
+        }
+      ]
+    },
+    {
+      "name": "office/",
+      "url": "https://netamorphosis.com/office/"
+    },
+    {
+      "name": "results/",
+      "url": "https://netamorphosis.com/results/",
+      "children": [
+        {
+          "name": "recognition/",
+          "url": "https://netamorphosis.com/results/recognition/"
+        },
+        {
+          "name": "clients/",
+          "children": [
+            {
+              "name": "suite-ny/",
+              "url": "https://netamorphosis.com/results/clients/suite-ny/"
+            },
+            {
+              "name": "kirna-zabete/",
+              "url": "https://netamorphosis.com/results/clients/kirna-zabete/"
+            },
+            {
+              "name": "dynomighty/",
+              "url": "https://netamorphosis.com/results/clients/dynomighty/"
+            },
+            {
+              "name": "vipp/",
+              "url": "https://netamorphosis.com/results/clients/vipp/"
+            },
+            {
+              "name": "amma/",
+              "url": "https://netamorphosis.com/results/clients/amma/"
+            },
+            {
+              "name": "khaite/",
+              "url": "https://netamorphosis.com/results/clients/khaite/"
+            },
+            {
+              "name": "aerin/",
+              "url": "https://netamorphosis.com/results/clients/aerin/"
+            },
+            {
+              "name": "frances-valentine/",
+              "url": "https://netamorphosis.com/results/clients/frances-valentine/"
+            },
+            {
+              "name": "exoceuticals/",
+              "url": "https://netamorphosis.com/results/clients/exoceuticals/"
+            },
+            {
+              "name": "new-museum/",
+              "url": "https://netamorphosis.com/results/clients/new-museum/"
+            },
+            {
+              "name": "newport-academy/",
+              "url": "https://netamorphosis.com/results/clients/newport-academy/"
+            },
+            {
+              "name": "ryu/",
+              "url": "https://netamorphosis.com/results/clients/ryu/"
+            },
+            {
+              "name": "oliviers-co/",
+              "url": "https://netamorphosis.com/results/clients/oliviers-co/"
+            },
+            {
+              "name": "teen-rehab/",
+              "url": "https://netamorphosis.com/results/clients/teen-rehab/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "about/",
+      "url": "https://netamorphosis.com/about/",
+      "children": [
+        {
+          "name": "team/",
+          "url": "https://netamorphosis.com/about/team/",
+          "children": [
+            {
+              "name": "alia-carangelo/",
+              "url": "https://netamorphosis.com/about/team/alia-carangelo/"
+            },
+            {
+              "name": "ryan-roberts/",
+              "url": "https://netamorphosis.com/about/team/ryan-roberts/"
+            },
+            {
+              "name": "sally-smith/",
+              "url": "https://netamorphosis.com/about/team/sally-smith/"
+            },
+            {
+              "name": "phillip-jones/",
+              "url": "https://netamorphosis.com/about/team/phillip-jones/"
+            },
+            {
+              "name": "samantha-loiacono/",
+              "url": "https://netamorphosis.com/about/team/samantha-loiacono/"
+            },
+            {
+              "name": "ciara-gormley/",
+              "url": "https://netamorphosis.com/about/team/ciara-gormley/"
+            },
+            {
+              "name": "henri-paget/",
+              "url": "https://netamorphosis.com/about/team/henri-paget/"
+            },
+            {
+              "name": "brittany-queeney/",
+              "url": "https://netamorphosis.com/about/team/brittany-queeney/"
+            },
+            {
+              "name": "kirsten-brittle/",
+              "url": "https://netamorphosis.com/about/team/kirsten-brittle/"
+            },
+            {
+              "name": "carly-link/",
+              "url": "https://netamorphosis.com/about/team/carly-link/"
+            },
+            {
+              "name": "lyde-spann/",
+              "url": "https://netamorphosis.com/about/team/lyde-spann/"
+            }
+          ]
+        },
+        {
+          "name": "why-choose-us/",
+          "url": "https://netamorphosis.com/about/why-choose-us/"
+        }
+      ]
+    },
+    {
+      "name": "services/",
+      "url": "https://netamorphosis.com/services/",
+      "children": [
+        {
+          "name": "omnichannel/",
+          "url": "https://netamorphosis.com/services/omnichannel/"
+        },
+        {
+          "name": "ecommerce/",
+          "url": "https://netamorphosis.com/services/ecommerce/"
+        },
+        {
+          "name": "capital-raising/",
+          "url": "https://netamorphosis.com/services/capital-raising/"
+        },
+        {
+          "name": "maintenance-hosting/",
+          "url": "https://netamorphosis.com/services/maintenance-hosting/"
+        },
+        {
+          "name": "analytics-consulting/",
+          "url": "https://netamorphosis.com/services/analytics-consulting/"
+        },
+        {
+          "name": "technology/",
+          "url": "https://netamorphosis.com/services/technology/"
+        },
+        {
+          "name": "performance-management/",
+          "url": "https://netamorphosis.com/services/performance-management/"
+        },
+        {
+          "name": "seo-services/",
+          "url": "https://netamorphosis.com/services/seo-services/"
+        },
+        {
+          "name": "ux-design/",
+          "url": "https://netamorphosis.com/services/ux-design/"
+        },
+        {
+          "name": "content-creation/",
+          "url": "https://netamorphosis.com/services/content-creation/"
+        },
+        {
+          "name": "cms-implementation/",
+          "url": "https://netamorphosis.com/services/cms-implementation/"
+        },
+        {
+          "name": "strategy/",
+          "url": "https://netamorphosis.com/services/strategy/"
+        }
+      ]
+    },
+    {
+      "name": "privacy/",
+      "url": "https://netamorphosis.com/privacy/"
+    },
+    {
+      "name": "contact-us/",
+      "url": "https://netamorphosis.com/contact-us/"
+    }
+  ]
+}
