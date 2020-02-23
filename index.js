@@ -18,11 +18,15 @@ const directoryCallbacks = [ // static site's GUI will let user build this objec
 
 
 run()
-.then((results) => console.log(
+.then((results) => {
+    console.log(
     `crawling complete!
     ${ results.sitemaps.length } sitemaps combined and parsed into a JSON tree containing ${ results.sitemapURLs.length } URLs.
     ${ directoryCallbacks.reduce((acc, dirConfig) => acc + dirConfig.pageURLs.length, 0) } pages crawled and converted to JSON. 
-`))
+    `)
+
+    process.exit(0)
+})
 .catch(err => {
     console.error(err)
     if (browser.close) {
@@ -60,14 +64,39 @@ async function run() {
         dirConfig.pageURLs = getPageURLs(dirConfig.path, sitemapObj)
 
         if (dirConfig.pageURLs.length > 0 && dirConfig.on) {
+            const maxTabs = 4
+            let activeTabs = 0
             dirConfig.values = await Promise.all(
-                dirConfig.pageURLs.map(async url => {
+                dirConfig.pageURLs.map(async (url, index) => {
                     let res = {}
                     if (dirConfig.preCallback) {
                         dirConfig.preCallback(url, dirConfig) // on frontend, user will be able to define conditional scraping
                     }
                     if (dirConfig.callback) {
+                        let cancelMaxTimeout = null
+                        if (activeTabs >= maxTabs) {  
+                            await new Promise((resolve, reject) => {
+                                maxTimeout = setTimeout(() => reject('maxTimeout exceeded'), 5000 * index) // wait 5s per page, allowing for longer wait as you go.
+                                cancelMaxTimeout = () => {
+                                    clearTimeout(maxTimeout)
+                                    return resolve(true)
+                                }
+                                setInterval(() => { // check if a tab is open on an interval
+                                    if(activeTabs < maxTabs) {
+                                        clearTimeout(maxTimeout)
+                                        return resolve(true)
+                                    }
+                                }, 100)
+                            })
+                        }
+                        activeTabs++
+
                         res = crawlPage(lastPageOfPath(dirConfig.path)+'/', url, dirConfig.callback) // main scraping operation
+                            .then(() => {
+                                console.log(`Successfully scraped ${ url }`)
+                                activeTabs = activeTabs - 1
+                                if (cancelMaxTimeout) { cancelMaxTimeout() }
+                            })
                             .catch(err => console.log(url, err))
                     }
                     if (dirConfig.postCallback) {
