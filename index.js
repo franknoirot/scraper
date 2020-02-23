@@ -8,6 +8,7 @@ const { scrapeFns } = require('./scrapeFns.js')
 const promWrite = util.promisify(fs.writeFile)
 const promMkdir = util.promisify(fs.mkdir)
 let browser = {}
+let timerStart
 
 
 const directoryCallbacks = [ // static site's GUI will let user build this object eventually
@@ -22,7 +23,7 @@ run()
     console.log(
     `crawling complete!
     ${ results.sitemaps.length } sitemaps combined and parsed into a JSON tree containing ${ results.sitemapURLs.length } URLs.
-    ${ directoryCallbacks.reduce((acc, dirConfig) => acc + dirConfig.pageURLs.length, 0) } pages crawled and converted to JSON. 
+    ${ directoryCallbacks.reduce((acc, dirConfig) => acc + dirConfig.pageURLs.length, 0) } pages crawled and converted to JSON in ${ (Date.now() - timerStart) / 1000 } seconds. 
     `)
 
     process.exit(0)
@@ -36,6 +37,7 @@ run()
 })
 
 async function run() {
+    timerStart = Date.now()
     const sitemaps = await fsPromises.readdir('./xml', { withFileTypes: true }).then(arr =>
         arr.map(fileObj => fileObj.name)
         .filter(filename => filename.includes('.xml'))
@@ -132,7 +134,8 @@ async function crawlPage(dir, url, crawlFn) {
         { 
             filename: lastPageOfPath(url),
             content,
-        })
+        }
+    )
 
     return content
 }
