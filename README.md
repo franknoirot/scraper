@@ -1,6 +1,6 @@
 # A Node XML Sitemap Scraper Prototype
-*powered by Puppeteer and sitemap.js*
----
+*for converting site data to JSON, powered by Puppeteer and sitemap.js*
+
 ## How to use
 1. Download .xml sitemap file(s) from site of your choice and place in root directory
 2. Update the `sitemaps` array at the top of `index.js`
