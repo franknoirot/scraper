@@ -1,14 +1,31 @@
 {
-  "name": "neta-scraper",
+  "name": "svelte-app",
   "version": "1.0.0",
-  "description": "A scraper for netamorphosis.com, to convert all it's data to a portable format.",
-  "main": "index.js",
+  "main": "./src/electron.js",
   "scripts": {
-    "scrape": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "electron": "run-s build pure-electron",
+    "pure-electron": "electron .",
+    "electron-dev": "run-p dev pure-electron-dev",
+    "pure-electron-dev": "NODE_ENV=development electron .",
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "start": ""
   },
-  "author": "",
-  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^11.0.0",
+    "@rollup/plugin-node-resolve": "^7.0.0",
+    "chokidar": "^3.3.1",
+    "electron": "^8.0.1",
+    "npm-run-all": "^4.1.5",
+    "rollup": "^1.20.0",
+    "rollup-plugin-livereload": "^1.0.0",
+    "rollup-plugin-node-builtins": "^2.1.2",
+    "rollup-plugin-node-globals": "^1.4.0",
+    "rollup-plugin-svelte": "^5.0.3",
+    "rollup-plugin-terser": "^5.1.2",
+    "sirv-cli": "^0.4.5",
+    "svelte": "^3.0.0"
+  },
   "dependencies": {
     "puppeteer": "^2.1.1",
     "sitemap": "^5.1.0"
